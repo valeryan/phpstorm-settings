@@ -1,0 +1,9 @@
+<toolSet name="External Tools">
+  <tool name="php-cs-fixer" description="Fix PHP files with the php cs fixer" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Users\shils\AppData\Roaming\Composer\vendor\bin\php-cs-fixer.bat" />
+      <option name="PARAMETERS" value="fix &quot;$FileDir$/$FileName$&quot; --verbose --rules={&quot;@PSR2&quot;: true, &quot;ordered_imports&quot;: true, &quot;ordered_class_elements&quot;: true, &quot;no_unused_imports&quot;: true, &quot;array_syntax&quot;: {&quot;syntax&quot;: &quot;short&quot;}}" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+</toolSet>
