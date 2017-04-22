@@ -2,7 +2,7 @@
   <tool name="php-cs-fixer" description="Fix PHP files with the php cs fixer" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="bash.exe" />
-      <option name="PARAMETERS" value="-c `php-cs-fixer fix --verbose --rules='{&quot;@PSR2&quot;: true, &quot;ordered_impor_unused_imports&quot;: true, &quot;array_syntax&quot;: {&quot;syntax&quot;: &quot;short&quot;}}' &quot;$FileDir$/$FileName$&quot;`" />
+      <option name="PARAMETERS" value="-c `php-cs-fixer fix --verbose --rules='{&quot;@PSR2&quot;: true, &quot;ordered_imports&quot;: true, &quot;no_unused_imports&quot;: true, &quot;array_syntax&quot;: {&quot;syntax&quot;: &quot;short&quot;}}' $/FileRelativePath$`" />
       <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
   </tool>
